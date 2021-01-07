@@ -1,5 +1,8 @@
-*{
-    background-color:rgba(14.5, 43.9, 34.9)
+body{
+  margin: 0px;
+    background-color: rgba(14.5, 43.9, 34.9);
+    margin-top: 10px;
+
 }
 .container {
   display: flex;
@@ -8,17 +11,31 @@
 }
 
 h1 {
-    color:rgba(66.7, 60.4, 22.4);
+  color: rgba(66.7, 60.4, 22.4);
   font-family: fantasy;
   font-size: 3em;
   border-bottom: 2px solid pink;
   border-right: 2px solid pink;
   width: 400px;
   text-align: center;
+  /* make sure it works in works in mozila */
+  -moz-box-shadow: 4px 4px 5px #888888;
+  /* make sure it works in works in internet explorer */
+  -ms-box-shadow: 4px 4px 5px #888888;
+  /* make sure it works in works in safari and chrome */
+  -webkit-box-shadow: 4px 4px 5px #888888;
+  /* make sure it works in works in Opera */
+  -o-box-shadow: 4px 4px 5px #888888;
+  box-shadow: 4px 4px 5px #888888;
 }
 
 img {
   width: 450px;
   height: 300px;
   margin: 10px;
+  transition: all 1s;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
